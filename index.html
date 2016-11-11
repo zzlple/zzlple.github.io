@@ -286,6 +286,7 @@ $(document).ready(function(){
   new jPlayerPlaylist({
     jPlayer: "#jquery_jplayer_1",
     cssSelectorAncestor: "#jp_container_1"
+
   }, [
     
     {
@@ -294,13 +295,22 @@ $(document).ready(function(){
       oga:"许巍 - 喝茶去.mp3"
     }
   ], {
+
+
+      playlistOptions: {
+    autoPlay: true,
+    enableRemoveControls: true
+  },
     swfPath: "../../dist/jplayer",
     supplied: "oga, mp3",
     wmode: "window",
+
     useStateClassSkin: true,
     autoBlur: false,
     smoothPlayBar: true,
+         autoPlay:true,
     keyEnabled: true
+
   });
 });
 </script>
