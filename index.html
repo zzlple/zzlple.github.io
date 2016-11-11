@@ -301,6 +301,7 @@ $(document).ready(function(){
     autoPlay: true,
     enableRemoveControls: true
   },
+    ready:function(){$(this).jPlayer("play").jPlayer("repeat");},
     swfPath: "../../dist/jplayer",
     supplied: "oga, mp3",
     wmode: "window",
